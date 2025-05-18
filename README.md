@@ -23,12 +23,12 @@
 
 ### 🎨 颜色提取（黄色、红色、蓝色等）
 <div align="center">
-  <img src="color_segmentation/result_output.png" width="300"/>  
+  <img src="color-segmentation/result_output.png" width="300"/>  
 </div>
 
 ### 📐 几何拟合（最小外接矩形 + 多边形轮廓）
 <div align="center">
-  <img src="shape_fitting/fitted_result.png" width="300"/>  
+  <img src="color-segmentation/contour-fitted.png" width="300"/>  
 </div>
 
 ---
@@ -42,7 +42,7 @@
 ```bash
 pip install opencv-python numpy
 ```
-###2. 使用颜色提取模块
+### 2. 使用颜色提取模块
 进入模块目录：
 
 ```bash
@@ -57,15 +57,17 @@ result_output.png：颜色提取后的图像结果
 
 可通过修改 target_color_rgb 设置提取颜色（RGB 格式）：
 
-```target_color_rgb = {
+```
+target_color_rgb = {
     (30,67,109),     # 蓝色
     ...
 }
 ```
-###3. 使用几何拟合模块
+### 3. 使用几何拟合模块
 确保 color_test.jpg 存在于 shape_fitting/ 目录下：
 
-```cd shape_fitting
+```
+cd shape_fitting
 python shape_fitting.py
 ```
 输出文件：
@@ -73,14 +75,15 @@ python shape_fitting.py
 fitted_result.png：绘制轮廓、矩形和多边形后的图像
 
 fitted_mask.png：用于形状分析的掩码图
-
-##📂 文件说明
-文件/文件夹名	说明
-colorsegmentation.py	颜色提取主程序
-shape_fitting.py	轮廓分析与图形拟合主程序
-color_test.jpg	输入图像，可替换
-mask_output.png	提取颜色的掩码图
-result_output.png	提取颜色后的输出图像
-contour-fitted.png	拟合形状后的图像（外接矩形 + 多边形）
-README.md	项目说明文件
+---
+## 📂 文件说明
+| 文件/文件夹名      | 说明                                  |
+|------------------|----------------------------------------|
+| `colorsegmentation.py`  | 颜色提取主程序 |
+| `shape_fitting.py`  | 轮廓分析与图形拟合主程序 |
+|`color_test.jpg`  | 输入图像，可替换 |
+|`mask_output.png`  | 提取颜色的掩码图 |
+| `result_output.png` | 提取颜色后的输出图像 |
+| `contour-fitted.png` | 拟合形状后的图像（外接矩形 + 多边形） |
+| `README.md` | 项目说明文件 |
 
