@@ -23,12 +23,12 @@
 
 ### 🎨 颜色提取（黄色、红色、蓝色等）
 <div align="center">
-  <img src="color-segmentation/result_output.png" width="300"/>  
+  <img src="result_output.png" width="300"/>  
 </div>
 
 ### 📐 几何拟合（最小外接矩形 + 多边形轮廓）
 <div align="center">
-  <img src="color-segmentation/contour-fitted.png" width="300"/>  
+  <img src="contour_fitted.png" width="300"/>  
 </div>
 
 ---
