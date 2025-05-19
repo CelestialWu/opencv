@@ -14,7 +14,7 @@ for cnt in contours:
 	
 	rect=cv2.minAreaRect(cnt)
 	box=cv2.boxPoints(rect)
-	box=np.int0(box)
+	box = box.astype(np.int32)
 	cv2.drawContours(output,[box],0,(0,255,0),2)
 	
 	epsilon=0.01*cv2.arcLength(cnt,True)
