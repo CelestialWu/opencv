@@ -11,10 +11,10 @@
 
 ## 📌 项目结构与功能
 
-| 文件夹/模块         | 功能描述                                   |
+|    文件     | 功能描述                                   |
 |------------------|----------------------------------------|
-| `color_segmentation/` | 提取目标颜色区域，并输出掩码图与保留图 |
-| `shape_fitting/`      | 对提取区域进行轮廓分析、最小矩形与多边形拟合 |
+| `color_segmentation.py/` | 提取目标颜色区域，并输出掩码图与保留图 |
+| `minAreaRect.py/`      | 对提取区域进行轮廓分析、最小矩形与多边形拟合 |
 | `README.md`           | 本说明文件，包含安装、运行、注意事项等信息 |
 
 ---
@@ -28,7 +28,7 @@
 
 ### 📐 几何拟合（最小外接矩形 + 多边形轮廓）
 <div align="center">
-  <img src="contour_fitted.png" width="300"/>  
+  <img src="white_corners.png" width="300"/>  
 </div>
 
 ---
@@ -80,10 +80,10 @@ fitted_mask.png：用于形状分析的掩码图
 | 文件/文件夹名      | 说明                                  |
 |------------------|----------------------------------------|
 | `colorsegmentation.py`  | 颜色提取主程序 |
-| `shape_fitting.py`  | 轮廓分析与图形拟合主程序 |
+| `minAreaRect.py`  | 轮廓分析与图形拟合主程序 |
 |`color_test.jpg`  | 输入图像，可替换 |
 |`mask_output.png`  | 提取颜色的掩码图 |
 | `result_output.png` | 提取颜色后的输出图像 |
-| `contour-fitted.png` | 拟合形状后的图像（外接矩形 + 多边形） |
+| `white_corners.png` | 拟合形状后的图像（外接矩形 + 多边形） |
 | `README.md` | 项目说明文件 |
 

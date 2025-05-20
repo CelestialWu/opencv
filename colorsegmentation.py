@@ -6,7 +6,7 @@ target_color_rgb=[
 	(187,68,47), #red
 ]
 
-img=cv2.imread("color_test.jpg")
+img=cv2.imread("test1.jpg")
 hsv=cv2.cvtColor(img,cv2.COLOR_BGR2HSV)
 
 
